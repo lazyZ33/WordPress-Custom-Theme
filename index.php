@@ -9,7 +9,11 @@
  ?>
 
 <div class="content">
-  This is static content
+    <div class="col-6">
+    <h2>Home Page</h2>
+    <p>Welcome to the home page of the Custom Theme.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+</div>
 </div>
     
 <?php get_footer(); ?>
