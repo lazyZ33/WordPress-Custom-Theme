@@ -22,13 +22,11 @@
         wp_body_open();
     }
   ?>
-  <header>
-    <h1>Custom Theme</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="page" class="site"> 
+      <header id="masthead" class="site-header" role="banner">
+          <?php get_template_part('/template-parts/header/nav')?>
+        
+      </header>
+      <div id="content" class="site-content">
+
+      
