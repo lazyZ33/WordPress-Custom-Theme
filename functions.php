@@ -5,8 +5,16 @@
 * @package Custom Theme
 */
 
-// Load CSS and JS
 
+//Include autoloader file to load all classes at once without including them one by one.
+if(!defined('CUSTOM_THEME_DIR_PATH')){
+    define('CUSTOM_THEME_DIR_PATH', untrailingslashit( get_template_directory()));
+}
+require_once CUSTOM_THEME_DIR_PATH . 'inc/helpers/autoloader.php';
+
+
+
+// Load CSS and JS files.
 function custom_theme_enqueue_scripts(){
     //Register Styles.
     wp_register_style( 'style-css', get_stylesheet_uri(), [], filemtime( get_template_directory() . '/style.css' ), 'all' );
