@@ -44,3 +44,10 @@
     </div>
   </div>
 </nav>
+
+<?php
+  wp_nav_menu([
+      'theme_location' => 'custom-theme-header-menu',
+      'container-class' => 'my_extra_menu_class'
+  ]);
+?>
